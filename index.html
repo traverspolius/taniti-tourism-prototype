@@ -1,141 +1,70 @@
 <!doctype html>
-<html>
-
+<!--
+============================================================
+Project: Taniti Tourism Website - UX Design Prototype
+Student Name: Travers Polius
+Student ID: 012456152
+Course: D479 - User Experience Design
+Date: October 10, 2026
+Institution: Western Governors University (WGU)
+============================================================
+-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Taniti Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #111
-        }
-
-        .wrap {
-            max-width: 980px;
-            margin: auto;
-            background: #fff;
-            min-height: 100vh;
-            padding: 20px;
-            border-left: 1px solid #999;
-            border-right: 1px solid #999
-        }
-
-        nav a {
-            display: inline-block;
-            padding: 10px 14px;
-            margin: 4px;
-            border: 1px solid #111;
-            color: #111;
-            text-decoration: none
-        }
-
-        nav a.active {
-            background: #ddd;
-            font-weight: bold
-        }
-
-        .hero,
-        .box,
-        .card {
-            border: 2px solid #111;
-            padding: 16px;
-            margin: 14px 0;
-            background: white
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px
-        }
-
-        .grid2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px
-        }
-
-        .btn {
-            display: inline-block;
-            border: 2px solid #111;
-            padding: 10px 14px;
-            margin-top: 8px;
-            color: #111;
-            text-decoration: none;
-            font-weight: bold
-        }
-
-        input,
-        select {
-            padding: 8px;
-            border: 1px solid #111;
-            margin: 6px;
-            width: 180px
-        }
-
-        footer {
-            border-top: 1px solid #111;
-            margin-top: 30px;
-            padding-top: 12px
-        }
-
-        @media(max-width:700px) {
-
-            .grid,
-            .grid2 {
-                grid-template-columns: 1fr
-            }
-
-            nav a {
-                display: block
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taniti Home</title>
+<style>
+*{box-sizing:border-box}html{scroll-padding-top:20px}body{font-family:Arial,sans-serif;margin:0;background:#edf4f2;color:#243b3a;line-height:1.6}.wrap{max-width:1080px;margin:auto;background:#fff;min-height:100vh;padding:clamp(16px,4vw,40px)}h1{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;color:#164f49}h2{font-size:1.65rem;line-height:1.3;color:#164f49}h3{font-size:1.15rem;line-height:1.4;margin-top:0}a{color:#145e59;text-underline-offset:3px}nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}nav a,.btn,button{display:inline-block;padding:11px 16px;border:2px solid #21685f;border-radius:4px;color:#14564e;background:#fff;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}nav a.active,.btn,button[aria-pressed="true"]{background:#145e55;color:#fff}nav a.active{text-decoration:underline}button[aria-pressed="true"]:before{content:'✓ ';}a:hover,button:hover{background:#e5f1ec;color:#164f49}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8b470b;outline-offset:3px}.hero,.box,.card{border:1px solid #71948d;padding:20px;margin:16px 0;background:#fff;border-radius:5px}.hero{background:#e5f1ec;border-top:5px solid #21685f}.box{background:#faf6eb}.grid,.grid2{display:grid;gap:16px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid>.card,.grid2>.card{margin:0}.btn{margin-top:8px}label{display:block;font-weight:700;margin:12px 0 4px}input,select,textarea{display:block;width:100%;max-width:30rem;padding:11px;border:1px solid #5b7670;border-radius:3px;background:white;color:#243b3a;font:inherit}input[type="checkbox"]{display:inline-block;width:20px;height:20px;vertical-align:middle;margin-right:8px}fieldset{min-width:0;border:1px solid #71948d;padding:16px}legend{font-weight:700;padding:0 6px}.filters{display:flex;flex-wrap:wrap;gap:8px}.note{color:#465e58;font-size:.95rem}.placeholder{border:2px dashed #71948d;padding:24px;background:#f0f5f2;text-align:center}.skip{position:absolute;left:16px;top:-100px;background:white;padding:12px;z-index:2}.skip:focus{top:12px}footer{border-top:3px solid #21685f;margin-top:36px;padding-top:20px}footer h2{font-size:1.2rem}[hidden]{display:none!important}@media(max-width:700px){.grid,.grid2{grid-template-columns:1fr}nav a{flex:1 1 140px}h2{font-size:1.4rem}.filters button{flex:1 1 140px}}.hero-photo{margin:20px 0}.hero-photo img{display:block;width:100%;height:auto;max-height:400px;object-fit:cover;object-position:center bottom;border-radius:4px}.hero-photo figcaption{margin-top:8px;font-size:.9rem;color:#465e58}</style>
 </head>
-
 <body>
-    <div class="wrap">
-        <h1>Taniti Tourism Website Wireframe Prototype</h1>
-        <nav><a class="active" href="index.html">Home</a> <a class="" href="stay.html">Places to Stay</a> <a class=""
-                href="things.html">Things to Do</a> <a class="" href="plan.html">Plan Trip</a> <a class=""
-                href="faq.html">FAQ</a></nav>
-        <main>
-            <section class="hero">
-                <h2>Welcome to Taniti</h2>
-                <p>Explore beaches, rainforest, the volcano, local culture, lodging, and transportation.</p><a
-                    class="btn" href="plan.html">Start Planning Your Trip</a>
-            </section>
-            <section class="grid">
-                <div class="card">
-                    <h3>Top Attractions</h3>
-                    <p>Beach, rainforest, volcano, museum, snorkeling, zip-lining.</p><a href="things.html">View things
-                        to do</a>
-                </div>
-                <div class="card">
-                    <h3>Find Lodging</h3>
-                    <p>Hotels, resort, hostel, B&Bs, family-owned hotels, and private rentals.</p><a
-                        href="stay.html">View places to stay</a>
-                </div>
-                <div class="card">
-                    <h3>Transportation</h3>
-                    <p>Air, cruise ship, buses, taxi, rental car, walking, and bikes.</p><a href="plan.html">View travel
-                        info</a>
-                </div>
-            </section>
-            <section class="box">
-                <h3>Trip Planner Search</h3><input placeholder="Travel dates"><input placeholder="Party size"><select>
-                    <option>Interests</option>
-                    <option>Beach</option>
-                    <option>Rainforest</option>
-                    <option>Volcano</option>
-                </select><a class="btn" href="plan.html">View Recommended Plan</a>
-            </section>
-        </main>
-        <footer>Footer: Contact | Travel Alerts | Accessibility | Government of Taniti</footer>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<h1>Taniti Tourism Website Wireframe Prototype</h1>
+<nav aria-label="Main navigation">
+<a class="active" aria-current="page" href="index.html">Home</a> <a class="" href="stay.html">Places to Stay</a> <a class="" href="things.html">Things to Do</a> <a class="" href="plan.html">Plan Trip</a> <a class="" href="faq.html">FAQ</a>
+</nav>
+<main id="main">
+<section class="hero">
+<h2>Welcome to Taniti</h2>
+<p>Explore beaches, rainforest, the volcano, local culture, lodging, and transportation.</p>
+<figure class="hero-photo">
+<img src="images/pexels-adriendrj-33980501.jpg" alt="Tropical beachfront resort with palm trees, turquoise water, and thatched-roof structures in French Polynesia" width="5727" height="4000" loading="eager">
+<figcaption>Representative photograph of French Polynesia. Photo by Adrien Daurenjou via <a href="https://www.pexels.com/photo/scenic-tropical-beach-in-french-polynesia-33980501/">Pexels</a>. Taniti is a fictional island.</figcaption>
+</figure>
+<a class="btn" href="plan.html">Start Planning Your Trip</a>
+</section>
+<h2>Explore the island</h2>
+<section class="grid">
+<div class="card">
+<h3>Top Attractions</h3>
+<p>Beach, rainforest, volcano, museum, snorkeling, zip-lining.</p>
+<a href="things.html">View things to do</a>
+</div>
+<div class="card">
+<h3>Find Lodging</h3>
+<p>Hotels, resort, hostel, B&amp;Bs, and family-owned hotels. Private rental details remain a prototype placeholder.</p>
+<a href="stay.html">View places to stay</a>
+</div>
+<div class="card">
+<h3>Transportation</h3>
+<p>Air, cruise ship, buses, taxi, rental car, walking, and bikes.</p>
+<a href="plan.html#transportation">Explore transportation options</a>
+</div>
+</section>
+<section class="box">
+<h2>Plan your visit</h2>
+<p>Choose your dates, note your party size and interests, and explore lodging and transportation.</p>
+<a class="btn" href="plan.html">Open planning worksheet</a> <a class="btn" href="plan.html#transportation">Find transportation</a>
+</section>
+</main>
+<footer id="contact">
+<h2>Contact &amp; visitor resources</h2>
+<p>
+<strong>Contact information placeholder:</strong> Official contact details have not been provided for this prototype.</p>
+<p class="note">Footer: Contact | Travel Alerts | Accessibility | Government of Taniti</p>
+<p class="note">Travel alerts and government links are placeholders. Accessibility: use keyboard Tab to move between controls and Enter or Space to activate buttons.</p>
+</footer>
+</div>
 </body>
-
 </html>
